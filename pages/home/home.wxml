@@ -1,0 +1,58 @@
+<swiper autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}" interval="2000" indicator-active-color="white">
+  <swiper-item>
+    <image mode="widthFix" src="../../image/lb2.jpg" mode="scaleToFill" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="../../image/lb3.jpg" mode="aspectFill" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="../../image/lb4.jpg" mode="aspectFill" />
+  </swiper-item>
+</swiper>
+
+<view class="btn">
+  <button bindtap="gotoapply">
+    <image class='btnImg' src='../../image/icon/application_icon.png'></image>
+    <view>出校申请 </view>
+  </button>
+  <button bindtap="gotoreport">
+    <image class='btnImg' src='../../image/icon/punch_icon.png'></image>
+    <view>健康打卡 </view>
+  </button>
+	
+</view>
+<view  bind:tap="onTapJump" class="btn">
+  <button>
+    <image class='btnImg' src='../../image/icon/barcode_icon.png'></image>
+    <view>入校二维码 </view>
+  </button>
+  <button bindtap="gotorecord">
+    <image class='btnImg' src='../../image/icon/look_icon.png'></image>
+    <view>申请记录</view>  
+  </button>
+	
+</view>
+ 
+<!-- <view class='content'>
+  <block wx:for="{{artlist}}">
+    <view class='artImg'>
+      <image src='{{item.imag}}'></image>
+    </view>
+    <view class='art' bindtap="gotonews">{{item.art}}</view>
+		<view style="border-bottom:1rpx solid #707070;width:100%"></view>
+  </block>
+</view> -->
+<!-- 新闻列表 -->
+<view class="conatiner">
+	<view wx:for="{{list}}" wx:key="id"> 
+		<view class="notices-item" bindtap="showDetail" data-id="{{item.id}}">
+			<view class="number-wrapper">
+				<text class="title">{{item.title}}</text>
+				<view class="count-wrapper">
+					<rich-text class="content">{{item.content}}</rich-text>		
+				</view>
+				<text class="author-info">{{item.author}}发布于{{item.createTime}}</text>
+			</view>
+		</view>
+	</view>
+</view>

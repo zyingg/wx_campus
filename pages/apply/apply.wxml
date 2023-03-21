@@ -1,0 +1,43 @@
+<view>
+	<image class="bg-image" src="../../image/blue-bg.jpg" mode="scaleToFill"></image>
+	<view class="body">
+		<rich-text nodes="<h1 style='color:white;'>离校申请</h1>"></rich-text>
+		<view class="timepicker">
+			<view>
+				<text class="t1">预计离校时间：</text>
+				<picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+					<view class="in">
+						{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+					</view>
+				</picker>
+			</view>
+			<view>
+				<text class="t1">预计返校时间：</text>
+				<picker mode="multiSelector" value="{{dateTime2}}" bindchange="changeDateTime2" bindcolumnchange="changeDateTimeColumn2" range="{{dateTimeArray2}}">
+					<view class="in2" bindtap='date2'>
+                  {{dateTimeArray2[0][dateTime2[0]]}}-{{dateTimeArray2[1][dateTime2[1]]}}-{{dateTimeArray2[2][dateTime2[2]]}} {{dateTimeArray2[3][dateTime2[3]]}}:{{dateTimeArray2[4][dateTime2[4]]}}
+                </view>
+				</picker>
+			</view>
+		</view>
+
+		<view class="info">
+			<view class="pick">
+				<view>
+					<text class="t2">是否离开中山：</text>
+					<picker bindchange="bindchange2" value="{{index2}}" range="{{option2}}">
+						<view class="in1">
+							{{option2[index2]}}
+						</view>
+					</picker>
+				</view>
+			</view>
+
+
+			<input placeholder="外出事由" type="text"  value="{{title}}" bindinput="getReason"/>
+			<input placeholder="紧急联系人" type="text" value="{{title}}" bindinput="getLink"/>
+			<input placeholder="紧急联系人电话" type="number" maxlength="11" value="{{title}}" bindinput="getNum"/>
+			<button bindtap="sendMessage">提交</button>
+		</view>
+	</view>
+</view>

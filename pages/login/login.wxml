@@ -1,0 +1,26 @@
+<view>
+	<image class="bg-image" src="../../image/login-bg.jpg" mode="scaleToFill"></image>
+
+
+	<view class="view1">
+		<rich-text nodes="<h1 style = 'color:white;'>账号密码登录</h1>"></rich-text>
+	</view>
+
+	<view class="view2">
+		<view class="inputView">
+			<input class="inputText" placeholder="请输入学号 / 工号" type="number" style="flex: content; justify-content: center" maxlength="13" bindinput="inputName" />
+		</view>
+	</view>
+	<view class="view3">
+		<view class="password">
+			<input class="passwordinput" placeholder="请输入密码" type="password" style="text-align:center" bindinput="inputPassword" />
+		</view>
+	</view>
+
+	<view class="view4">
+		<button bindtap="login">登录</button>
+	</view>
+
+	<navigator class="tips" url="/pages/choose/choose">还未注册？立即注册！</navigator>
+
+</view>

@@ -1,0 +1,16 @@
+<view>
+
+<view class="body">
+	<text class="title">{{list.title}}</text>
+	<view class="info">
+		<text>发布时间：2022-07-10</text>
+		<text class="author">{{list.author}}</text>
+	</view>
+	<view class="textbody">
+		<image style="width: 100%;" src="{{list.pic}}"></image>	
+		<rich-text nodes="{{list.content}}"></rich-text>
+	</view>
+</view>
+
+
+</view>

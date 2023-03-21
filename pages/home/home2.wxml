@@ -1,0 +1,63 @@
+<!--pages/home/home2.wxml-->
+ 
+<swiper autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}" interval="2000" indicator-active-color="white">
+  <swiper-item>
+    <image mode="widthFix" src="../../image/lb2.jpg" mode="scaleToFill" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="../../image/lb3.jpg" mode="aspectFill" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="../../image/lb4.jpg" mode="aspectFill" />
+  </swiper-item>
+</swiper>
+
+<view class="btn">
+  <button bindtap="gotocheck">
+    <image class='btnImg' src='../../image/icon/application_icon.png'></image>
+    <view style="width: 269rpx; height: 50rpx; display: block; box-sizing: border-box">审批出校申请 </view>
+  </button>
+  <button bindtap="gotoreport">
+    <image class='btnImg' src='../../image/icon/punch_icon.png'></image>
+    <view>健康打卡 </view>
+  </button>
+	
+</view>
+<view class="btn" style="width: 750rpx; height: 97rpx; display: flex; box-sizing: border-box">
+  <button>
+    <image class='btnImg' src='../../image/icon/barcode_icon.png'></image>
+    <view>入校二维码 </view>
+  </button>
+  <button bindtap="gotounreport">
+    <image class='btnImg' src='../../image/icon/jurassic_icon.png'></image>
+    <view style="width: 267rpx; height: 85rpx; display: block; box-sizing: border-box">查看未打卡人员 </view>  
+  </button>
+</view>
+<view class="btn">
+  <button>
+    <image class='btnImg' src='../../image/icon/send_icon.png'></image>
+    <view>发布公告 </view>
+  </button>
+  <button bindtap="gototx">
+    <image class='btnImg' src='../../image/icon/yiqing_icon.png'></image>
+    <view>疫情动态</view>  
+  </button>
+	
+</view>
+ 
+<view class="conatiner">
+	<view wx:for="{{list}}" wx:key="index">
+		<view class="notices-item">
+			<view>
+				<!-- class="number-wrapper" -->
+				<text class="title">{{item.title}}</text>
+				<view class="count-wrapper">
+				
+					<text class="content">{{item.content}}</text>
+				
+				</view>
+				<text class="author-info">{{item.author}}发布于{{item.createTime}}</text>
+			</view>
+		</view>
+	</view>
+</view>

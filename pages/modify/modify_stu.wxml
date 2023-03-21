@@ -1,0 +1,47 @@
+<view>
+  <image class="bg-image" src="../../image/blue-bg.jpg" mode="scaleToFill"></image>
+  <!-- 头部返回 -->
+  <view class="header">
+    <!-- <navigator><image class="backicon" src="https://6570-epidemic-prevention-0cc380f3a132-1312808262.tcb.qcloud.la/backicon.png?sign=c5b1916d7ca1cf00ae82ca1485294cdc&t=1657201511"></image></navigator> -->
+  </view>
+  <!-- 修改信息 -->
+  <view class="body" style="width: 593rpx; height: 826rpx; display: block; box-sizing: border-box">
+    <rich-text nodes="<h1 style='color:white;'>学生信息</h1>"></rich-text>
+		<view class="view2">
+      <text style="width: 179rpx; height: 92rpx; display: block; box-sizing: border-box">原密码：</text><input style="width: 384rpx; height: 62rpx; display: block; box-sizing: border-box"  placeholder="请输入原密码" type="password" bindinput="oldPass"/>
+    </view>
+		<view class="view2">
+      <text style="width: 172rpx; height: 99rpx; display: block; box-sizing: content-box">新密码：</text><input style="width: 370rpx; height: 76rpx; display: block; box-sizing: border-box"  placeholder="请输入新密码" type="password" bindinput="newPass"/>
+    </view>
+		<view class="view2">
+      <text style="width: 172rpx; height: 69rpx; display: block; box-sizing: border-box">确认：</text><input placeholder="请再次输入新密码" type="password" bindinput="rePass" />
+    </view>
+  </view>
+  <view class="view3" bindtap="submit">
+    <button  style="position: relative; left: 22rpx; top: -374rpx">保存</button>
+<!-- 
+    <view class="view1">
+      <text>学号：</text><input placeholder="请输入学号" type="number" maxlength="13" bindinput="inputUserId"/>
+    </view>
+    <view class="view2">
+      <text>密码：</text><input placeholder="请输入密码" type="password" bindinput="inputPassword"/>
+    </view>
+    <view class="view2">
+      <text>姓名：</text><input placeholder="请输入姓名" type="text" bindinput="inputName"/>
+    </view>
+    <view class="view2">
+      <text>手机：</text><input placeholder="请输入手机号" type="number" maxlength="11" bindinput="inputPhone"/>
+    </view>
+    <view class="view2">
+      <text>学院：</text><input placeholder="请输入学院" type="text" bindinput="inputCollege"/>
+    </view>
+    <view class="view2">
+      <text>班级：</text><input placeholder="请输入班级" type="text" bindinput="inputClass"/>
+    </view>
+  </view>
+  <view class="view3">
+    <button bindtap="stdmsg">保存</button>
+  </view> -->
+ 
+</view>
+</view>

@@ -1,0 +1,16 @@
+<view class="conatiner">
+	<view wx:for="{{list}}" wx:key="index">
+		<view class="notices-item">
+			<view>
+				<!-- class="number-wrapper" -->
+				<text class="title">{{item.title}}</text>
+				<view class="count-wrapper">
+				
+					<text class="content">{{item.content}}</text>
+				
+				</view>
+				<text class="author-info">{{item.author}}发布于{{item.createTime}}</text>
+			</view>
+		</view>
+	</view>
+</view>

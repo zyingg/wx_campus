@@ -1,0 +1,25 @@
+<!--pages/demo1/demo1.wxml-->
+<view>
+  <image class="bg-image" src="../../image/blue-bg.jpg" mode="scaleToFill"></image>
+  <!-- 头部返回 -->
+  <view class="header"></view>
+  <!-- 修改信息 -->
+  <view class="body">
+    <rich-text nodes="<h1 style='color:white;'>教师信息</h1>"></rich-text>
+    <view class="view1">
+      <text>工号：</text><input placeholder="请输入工号" type="number" maxlength="7"/>
+    </view>
+    <view class="view2">
+      <text>密码：</text><input placeholder="请输入密码" type="password"/>
+    </view>
+    <view class="view2">
+      <text>姓名：</text><input placeholder="请输入姓名" type="text"/>
+    </view>
+    <view class="view2">
+      <text>手机：</text><input placeholder="请输入手机号" type="number" maxlength="11"/>
+    </view>
+  </view>
+  <view class="view3">
+    <button bindtap="gotopersonal">保存</button>
+  </view>
+</view>

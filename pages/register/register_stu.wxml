@@ -1,0 +1,46 @@
+<view>
+	<image class="bg-image" src="../../image/blue-bg.jpg" mode="scaleToFill"></image>
+
+	<view class="view1">
+		<rich-text nodes="<h1 style = 'color:white;'>学生注册</h1>"></rich-text>
+	</view>
+
+	<view class="in">
+		<view>
+			<input class="inputText" placeholder="请输入学号" type="number" maxlength="13" style="text-align:center" bindinput="inputUserId" />
+		</view>
+		<view>
+			<input class="inputText" placeholder="请设置密码" type="password" style="text-align:center" bindinput="inputPassword" />
+		</view>
+		<view>
+			<input class="inputText" placeholder="请输入姓名" type="text" style="text-align:center" bindinput="inputUserName"/>
+		</view>
+		<view>
+			<input class="inputText" placeholder="请输入手机号码" type="number" maxlength="11" style="text-align:center" bindinput="inputTelePhone" />
+		</view>
+		<!-- <view>
+			<input class="inputText" placeholder="请输入学院" type="text" style="text-align:center" bindinput="inputRemark" />
+		</view> -->
+
+		<view class="pick">
+        <view>
+          <text class="t1">选择学院：</text>
+          <picker bindchange="bindchange1" value="{{index1}}" range="{{option1}}">
+            <view class="in1">
+              {{option1[index1]}}
+            </view>
+          </picker>
+        </view>
+			</view>
+		<view>
+			<input class="inputText" placeholder="请输入班级" type="text" style="text-align:center" bindinput="inputGroup" />
+		</view>
+	</view>
+
+	<view class="view4">
+		<button bindtap="register">注册</button>
+	</view>
+	<view class="tips">
+		<text bindtap="gotologin">已有账号？立即登录！</text>
+	</view>
+</view>

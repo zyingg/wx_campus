@@ -1,0 +1,17 @@
+<view>
+	<image class="bg-image" src="../../image/login-bg.jpg" mode="scaleToFill"></image>
+
+	<view class="view1">
+		<rich-text nodes="<h1 style = 'color:white;'>请选择注册角色</h1>"></rich-text>
+	</view>
+
+	<view class="choose">
+		<view class="s">
+			<button bindtap="gotostu">我是学生</button>
+		</view>
+		<view class="t">
+			<button bindtap="gototech">我是教师</button>
+		</view>
+	</view>
+
+</view>

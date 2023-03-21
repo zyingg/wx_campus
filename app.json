@@ -1,0 +1,61 @@
+{
+	"pages": [
+		"pages/login/login",
+		"pages/report/report",
+		"pages/apply/apply",
+		"pages/modify/modify_stu",
+		"pages/modify/modify_tech",
+		"pages/personal/personal",
+		"pages/notice/notice",
+		"pages/home/home",
+		"pages/newsdetail/newsdetail",
+		"pages/choose/choose",
+		"pages/register/register_stu",
+		"pages/register/register_tech",
+		"pages/apply/applylist",
+    "pages/code/code",
+		"pages/tx/tx",
+		"pages/home/home2",
+		"pages/unreport/unreport",
+		"pages/applyRecord/applyRecord"
+	],
+
+
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "校园i防控",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"selectedColor": "#53bafe",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "/image/tabs/home.png",
+				"selectedIconPath": "/image/tabs/home-active.png"
+			},
+			{
+				"pagePath": "pages/tx/tx",
+				"text": "疫情动态",
+				"iconPath": "/image/tabs/yq.png",
+				"selectedIconPath": "/image/tabs/yq-active.png"
+			},
+			{
+				"pagePath": "pages/notice/notice",
+				"text": "消息通知",
+				"iconPath": "/image/tabs/message.png",
+				"selectedIconPath": "/image/tabs/message-active.png"
+			},
+			{
+				"pagePath": "pages/personal/personal",
+				"text": "个人中心",
+				"iconPath": "/image/tabs/personal_icon.png",
+				"selectedIconPath": "/image/tabs/personal_blue.png"
+			}
+		]
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}

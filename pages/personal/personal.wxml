@@ -1,0 +1,21 @@
+<view class="img">
+  <image src="{{userInfo.avatarUrl}}" mode="aspectFit"></image>
+</view>
+<view class="info">
+  <view class="name" bindtap="handleTapLogin">{{userInfo.nickName}}</view>
+  <view class="studentid">{{userid}}</view>
+</view>
+<view class="change" bindtap="gotoModify">
+  <image src="../../image/icon/change_icon.png"></image>
+  <text>修改资料</text>
+</view>
+
+<!-- <view class="change" bindtap="gotoApplyRecord">
+  <image src="../../image/icon/look_icon.png"></image>
+  <text>申请记录</text>
+</view> -->
+<view class="change" bindtap="gotologin">
+  <image src="../../image/icon/loginout_icon.png"></image>
+  <text>退出账号</text>
+
+</view>

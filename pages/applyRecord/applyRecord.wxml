@@ -1,0 +1,20 @@
+<!--pages/applyReport.wxml-->
+<view class="perason">
+  <h2 class="weui-form__title" style="text-align: center;padding-top: 20px;">我的离校申请</h2>
+  <view class="issues-panel" wx:for="{{recordsList}}">
+    <view class="issues-input" bindinput="titleInput" disabled="true">请假事由：{{item.reason}}</view>
+    <textarea class="issues-textarea" bindinput="contentInput" auto-height disabled="true">
+			<text>是否离校：{{item.leaveCity==1?"是":item.leaveCity==0?"否":"未知"}}\n</text>
+      <text wx:if="{{item.remark!=null}}">途径地点：{{item.remark}}\n</text>
+			<text wx:if="{{item.emergencyContact!=null}}">紧急联系人：{{item.emergencyContact}}\n</text>
+      <text wx:if="{{item.ecPhone!=null}}">紧急电话：{{item.ecPhone}}\n</text>
+      <text>开始时间：{{item.startTime}}\n</text>
+      <text>结束时间：{{item.endTime}}\n</text>
+    </textarea>
+		<view class="issues-input" bindinput="titleInput" disabled="true">
+			<view wx:if="{{item.status!=0}}">审批人：{{item.applyId}}\n</view>
+			<view>管理员意见：{{item.status==1?"同意":item.status==2?"驳回":"审批中"}}</view>
+			<view wx:if="{{item.status!=0}}">{{item.applyContent}}</view>
+		</view>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+.bg-image {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.view1 {
+	padding: 115px 0 0 75px;
+}
+
+.view2 {
+	padding: 50px 0 0 0;
+}
+
+.inputText {
+	display: flex;
+	width: 550rpx;
+	margin: 0 auto;
+	height: 75rpx;
+	background: #fff;
+	border-radius: 36rpx;
+	font-size: 28rpx;
+	color: #1f272a;
+	text-align: center;
+}
+
+.view3 {
+	padding: 15px 0 0 0;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.password {
+	display: flex;
+	width: 550rpx;
+	margin: 0 auto;
+	height: 75rpx;
+	background: #fff;
+	border-radius: 36rpx;
+	font-size: 28rpx;
+	color: #1f272a;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.view4 {
+	padding: 40px 0 0 0;
+}
+
+.view4 button {
+	border-radius: 36rpx;
+	width: 550rpx;
+	height: 75rpx;
+	background-color: #4070E5;
+	color: white;
+}
+
+.tips{
+	padding: 25rpx 0 0 0;
+	color: white;
+	text-align: center;
+}

@@ -1,0 +1,30 @@
+.bg-image {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.view1 {
+	padding: 55px 0 0 75px;
+}
+
+.choose view button {
+	border-radius: 42rpx;
+	background-color: #4070E5;
+	color: white;
+	font-size: 25px;
+	width: 500rpx;
+	height: 160rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.s {
+	padding: 70px 0 0 0;
+}
+
+.t {
+	padding: 20px 0 0 0;
+}

@@ -1,0 +1,82 @@
+<view>
+  <image class="bg-image" src="../../image/blue-bg.jpg" mode="scaleToFill"></image>
+
+  <view class="view1">
+    <rich-text nodes="<h1 style = 'color:white;'>每日打卡</h1>"></rich-text>
+  </view>
+
+  <view class="in">
+    <view>
+      <input class="inputText" placeholder="请输入姓名" type="text" style="text-align:center" bindinput="getName" />
+    </view>
+    <view>
+      <input class="inputText" placeholder="请输入学号" type="number" style="text-align:center" maxlength="13" bindinput="getStuID" />
+    </view>
+    <view>
+      <input class="inputText" placeholder="请输入体温" type="text" style="text-align:center" bindinput="getTemp" maxlength="4" />
+    </view>
+    <view>
+      <input class="inputText" placeholder="当前所在地" type="text" style="text-align:center" bindinput="getAddress" />
+    </view>
+    <view class="pick">
+      <view>
+        <text class="t1">健康码状态：</text>
+        <picker bindchange="bindchange1" value="{{index1}}" range="{{option1}}">
+          <view class="in1">
+            {{option1[index1]}}
+          </view>
+        </picker>
+      </view>
+      <view>
+        <text class="t2">健康状态：</text>
+        <picker bindchange="bindchange2" value="{{index2}}" range="{{option2}}">
+          <view class="in2">
+            {{option2[index2]}}
+          </view>
+        </picker>
+      </view>
+      <view>
+        <text class="t3">疫苗接种情况：</text>
+        <picker bindchange="bindchange3" value="{{index3}}" range="{{option3}}">
+          <view class="in2">
+            {{option3[index3]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="upLoad">
+    <view class="b_name">粤康码：</view>
+    <view class="weui-uploader">
+      <view class="img-v weui-uploader__bd">
+        <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+          <image class='weui-uploader__img' src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+            <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+          </image>
+        </view>
+        <!-- 用来提示用户上传图片 -->
+        <view class="weui-uploader__input-box pic" bindtap="chooseImg" hidden="{{hiddenName}}"> </view>
+      </view>
+    </view>
+    <view class="b_name">行程卡：</view>
+    <view class="weui-uploader">
+      <view class="img-v weui-uploader__bd">
+        <view class='pic' wx:for="{{imgs2}}" wx:for-item="item" wx:key="*this">
+          <image class='weui-uploader__img' src="{{item}}" data-index="{{index4}}" mode="aspectFill" bindtap="previewImg2">
+            <icon type='cancel' class="delete-btn" data-index="{{index4}}" catchtap="deleteImg2"></icon>
+          </image>
+        </view>
+        <!-- 用来提示用户上传图片 -->
+        <view class="weui-uploader__input-box pic" bindtap="chooseImg2" hidden="{{hiddenName2}}"> </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-form__tips tips" style="color: red;">
+        * 本人承诺以上所填报的内容全部真实，并愿意承担相应责任。
+      </view>
+
+
+<view class="view4">
+  <button bindtap="sendHealth">提交</button>
+</view>

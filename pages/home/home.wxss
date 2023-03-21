@@ -1,0 +1,89 @@
+image {
+  width: 750rpx;
+  height: 320rpx;
+}
+
+swiper {
+  height: 400rpx;
+}
+
+swiper swiper-item image {
+  height: 400rpx;
+}
+
+.btn {
+	display: flex;
+	padding-top: 20rpx;
+}
+
+.btn button {
+  background-color: #fff;
+	color: #53bafe;
+
+}
+
+.btnImg {
+  width: 50rpx;
+  height: 50rpx;	float: left;
+}
+
+
+/* .artImg {
+	margin-top: 20rpx;
+  width: 30%;
+}
+
+.art {
+	margin-top: 20rpx;
+	padding-left: 30rpx;
+  width: 60%;
+}
+
+.artImg image {
+  width: 100%;
+  height: 150rpx;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+	flex-wrap: wrap;
+	margin: 20rpx auto;
+} */
+
+
+.notices-item {
+	margin: 25rpx;
+}
+.title {
+	/* overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; */
+  font-size: 33rpx;
+  font-weight: bold;
+	letter-spacing: 2px;
+	width: 80%;
+  color: #313131;
+}
+
+.author-info {
+	display: block;
+	width: 100%;
+	height: 50rpx;
+	line-height: 50rpx;
+  text-align: right;
+  color: #707070;
+  font-size: 25rpx;
+}
+.author-date{
+	padding-left: 20rpx;
+}
+.content{
+	color: #707070;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	height: 120rpx;
+	margin: 20rpx auto;
+	display: -webkit-box;
+}

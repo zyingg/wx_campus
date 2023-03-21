@@ -1,0 +1,6 @@
+<view style="text-align:center;margin-top:150px;">
+  <image src="{{imgUrl}}" mode="widthFix" ></image>
+  <view><text class="user-motto">{{stuId}}</text></view>
+  <view><text class="user-motto">{{name}}</text></view>
+  <view><text class="user-motto">{{time}}</text></view>
+</view>

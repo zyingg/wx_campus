@@ -1,0 +1,69 @@
+.bg-image {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.view1 {
+	padding: 60px 0 0 70px;
+}
+
+.in {
+	padding: 20px 0 0 0;
+}
+
+.in view input {
+	display: flex;
+	width: 550rpx;
+	margin: 20px auto;
+	height: 75rpx;
+	background: #fff;
+	border-radius: 36rpx;
+	font-size: 28rpx;
+	color: #1f272a;
+	text-align: center;
+}
+
+.view4 {
+	padding: 30px 0 0 0;
+}
+
+.view4 button {
+	border-radius: 36rpx;
+	width: 550rpx;
+	height: 75rpx;
+	background-color: #4070E5;
+	color: white;
+}
+
+.tips {
+	margin:20rpx auto;
+	color: white;
+	text-align: center;
+}
+.pick {
+	margin: auto;
+	width: 570rpx;
+	height: 34rpx;
+}
+.in1 {
+	margin: 0 0 40rpx 0;
+	line-height: 75rpx;
+	width: 350rpx;
+	height: 75rpx;
+	background-color: #fff;
+	border-radius: 36rpx;
+	font-size: 30rpx;
+	color: #1f272a;
+	text-align: center;
+	float: right;
+}
+.t1 {
+	margin-top: 13rpx;
+	margin-left: 13rpx;
+	color: white;
+	font-size: 37rpx;
+	font-weight: bold;
+	float: left;
+}

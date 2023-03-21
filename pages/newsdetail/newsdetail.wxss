@@ -1,0 +1,33 @@
+.body {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.info {
+  margin: 20rpx auto;
+  color: #616161;
+}
+
+.author {
+  float: right;
+  margin: 0 30rpx 0 0;
+}
+
+.img{
+  margin: 30rpx auto;
+}
+
+.img image{
+  margin: auto;
+  height: 400rpx;
+  width: 100%;
+}
+
+.textbody{
+  padding: 20rpx 0 100rpx 0;
+}
